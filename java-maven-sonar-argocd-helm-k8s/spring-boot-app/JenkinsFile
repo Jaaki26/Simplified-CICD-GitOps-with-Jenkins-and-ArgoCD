@@ -11,7 +11,7 @@ pipeline {
   }
   environment {
     SONAR_URL = "http://51.143.219.233:9000"
-    DOCKER_IMAGE_BASE = "abhishekf5/ultimate-cicd"
+    DOCKER_IMAGE_BASE = "janakiram26/ultimate-cicd"
     GIT_REPO_NAME = "Jenkins-Zero-To-Hero"
     GIT_USER_NAME = "Jaaki26"
     GIT_USER_EMAIL = "padala.janakiram26@gmail.com"
@@ -19,7 +19,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/Jaaki26/Jenkins-Zero-To-Hero.git'
+        git branch: 'main', url: 'https://github.com/Jaaki26/Simplified-CICD-GitOps-with-Jenkins-and-ArgoCD.git'
       }
     }
     stage('Build and Test') {
